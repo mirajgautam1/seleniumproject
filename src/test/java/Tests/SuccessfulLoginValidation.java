@@ -15,7 +15,7 @@ public class SuccessfulLoginValidation extends BaseClass {
         lpg.enterPassword("secret_sauce");
         lpg.clickOnLoginButton();
         WebElement inventorycontainer = driver.findElement(By.id("inventory_container")); // find inventory container element using id
-        Assert.assertTrue(inventorycontainer.isDisplayed(),"Not Logged in Yet"); // assertion to validate whether inventory container is being displayed or not
+        Assert.assertTrue(inventorycontainer.isDisplayed(),"Not Logged in Yet"); // assertion to validate whether inventory container is being displayed or not, if it is displayed then it means that login is succesful
 
     }
 
